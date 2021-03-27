@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+
+    <bean id="id_dog" class="Dog">
+        <property name="myName" value="poddle"></property>
+        <qualifier value="qf_dog"></qualifier>
+    </bean>
+    <bean id="id_cat" class="Cat">
+        <property name="myName" value="bella"></property>
+        <qualifier value="qf_cat"></qualifier>
+    </bean>
+    <bean id="id_petOwner" class="PetOwner">
+    </bean>
+</beans>
